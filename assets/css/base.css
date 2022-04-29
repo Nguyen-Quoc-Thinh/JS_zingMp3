@@ -1,0 +1,161 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --primary-text: #dadada;
+    --secondary-text: rgba(255, 255, 255, 0.5);
+    --web-wash: #170f23;
+    --layout-background: #231b2e;
+    --border-primary:#393243;
+    --primary-icon: #dadada;
+    --purple-primary: #7200a1;
+    --navbar-text: #dadada;
+    --primary-search: #26202e;
+    --app-notify-height: 32px;
+    --link-text-hover: #c662ef;
+    --player-control: #120c1c;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.9;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width {
+    width: 100%;
+
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.zm-btn {
+    font-size: 1.4rem;
+    border-radius: 999px;
+    line-height: normal;
+    border: 0;
+    display: inline-block;
+    font-weight: 400;
+    text-transform: none;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.icon {
+    
+}
+.level .level-left__button.zm-btn--disable {
+    opacity: 0.4;
+    cursor: default;
+}
+.songs-header__text {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--secondary-text);
+    
+}
+
+.size-40 {
+    width: 40px;
+    height: 40px;
+}
+
+.level-right .button:hover,
+.form-search .search-button:hover .search-icon,
+.song-option .dropdown-btn:hover,
+.song-arrang .dropdown-trigger:hover .dropdown-btn,
+.artis-infor .artis-follow:hover, 
+.btn-play:hover
+  {
+    opacity: 0.9;
+    cursor: pointer;
+}
+/* title description */
+.btn-like__desc,
+.btn-option__desc,
+.container-left__button .btn-more__desc,
+.song-btn-micro__desc,
+.song-btn-heart__desc,
+.song-btn-more__desc,
+.player-control__btn .player-like__desc,
+.btn-karaok__desc,
+.btn-mv__desc {
+    position: absolute;
+    font-size: 11px;
+    color: var(--white-color);
+    background-color: var(--primary-search);
+    /* line-height: 1.5; */
+    padding: 4px 4px;
+    border-radius: 6px;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    animation: notifyAnimation ease 0.3s;
+    
+}
+/* Description */
+.btn-like__desc::after,
+.btn-option__desc::after,
+.container-left__button .btn-more__desc::after,
+.song-btn-micro__desc::after,
+.song-btn-heart__desc::after,
+.song-btn-more__desc::after,
+.player-control__btn .player-like__desc::after,
+.btn-karaok__desc::after,
+.btn-mv__desc::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    border-width: 6px;
+    border-style: solid;
+    border-color: var(--primary-search) transparent transparent transparent;
+}
+
+.media-left:hover .img-card__item {
+    transform: scale(1.2, 1.2);
+    transition: transform linear 0.3s;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.artis-infor__item:hover .artis-infor__img {
+    opacity: 0.9;
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    transition: transform linear 0.3s;
+}
+
+.btn-action {
+    font-size: 18px;
+    color: var(--primary-icon);
+    margin: 0 8px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.btn-random.active,
+.btn-repeat.active {
+    color: var(--link-text-hover);
+}
+.btn-action:hover,
+.player-control__btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <div class="app-notify">
+            <i class="app-notify__icon ti-info-alt"></i>
+            <p class="app-notify__item">Zing MP3 được cung cấp dành cho thị trường Việt Nam. Một số tính năng và nội dung sẽ không khả dụng.</p>
+        </div>
+        <div class="section">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="navbar_wrapper">
+                    <div class="navbar__top">
+                        <div class="navbar__brand">
+                            <div class="navbar__brand-item logo_pc">
+                                <a href="">
+                                    <img src="https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="navbar__brand-item logo_mobile">
+                                <a href="">
+                                   <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.3.1/static/media/icon_zing_mp3_60.f6b51045.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar__main">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                    <a class="menu__item-link" title="Cá Nhân" href="">
+                                        <i class="menu__icon fas fa-photo-video"></i>
+                                        <span class="navbar-title">Cá Nhân</span>
+                                        
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" title="Khám Phá" href="">
+                                        <i class="menu__icon fas fa-compact-disc"></i>
+                                        <span class="navbar-title">Khám Phá</span>
+
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" title="#zingchart" href="">
+                                        <i class="menu__icon fab fa-creative-commons-sampling"></i>
+                                        <span class="navbar-title">#zingchart</span>
+
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" title="Radio" href="">
+                                        <i class="menu__icon fas fa-podcast"></i>
+                                        <span class="navbar-title">Radio</span>
+
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" title="Theo Dõi" href="#">
+                                        <i class="menu__icon fas fa-clipboard-list"></i>
+                                        <span class="navbar-title">Theo Dõi</span>
+                                        
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar__divide">
+                        <div class="sidebar__divide-scroll">
+                            <ul class="menu">
+                                <li class="menu__item">
+                                    <a class="menu__item-link" title="Nhạc Mới" href="">
+                                        <i class="menu__icon fas fa-music"></i>
+                                        <span class="navbar-title">Nhạc Mới</span>
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" title="Thể Loại" href="#">
+                                        <i class="menu__icon fas fa-icons"></i>
+                                        <span class="navbar-title">Thể Loại</span>
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" title="Top 100" href="">
+                                        <i class="menu__icon far fa-star"></i>
+                                        <span class="navbar-title">Top 100</span>
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" title="MV" href="">
+                                        <i class="menu__icon fab fa-youtube"></i>
+                                        <span class="navbar-title">MV</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <div class="login__nav">
+                                <div class="login_nav-content">Đăng nhập để khám phá những playlist dành riêng cho chính bạn.</div>
+                                <button class="login__btn">Đăng Nhập</button>
+                            </div>
+                        </div>
+                        <!-- <div class="track-vertical">
+                            <div class="thumb-vertical"></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="mainpage">
+                <div class="zm-header">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-left__button">
+                                <i class="icon-back ti-arrow-left"></i>
+                            </div>
+                            <div class="level-left__button zm-btn--disable">
+                                <i class="icon-forward ti-arrow-right"></i>
+                            </div>
+                            <form class="form-search">
+                                
+                                <i class="search-icon ti-search"></i>
+                                <div class="search-input">
+
+                                    <input class="search-input__item" type="text" style="outline: none" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV...">
+                                </div>
+                                <div class="search-history">
+                                    <ul class="search-history__list">
+                                        <li class="search-history__list-item">Neveda</li>
+                                        <li class="search-history__list-item">Lalisa</li>
+                                        <li class="search-history__list-item">BigctityB</li>
+                                    </ul>
+                                </div>
+                             </form>
+                        </div>
+                        <div class="level-right">
+                            <div class="setting-item theme-layout button">
+                                <button class="zm-btn setting-item__button btn-theme">
+                                    <i class="setting-item__icon icon-theme fas fa-tshirt"></i>
+                                    <div class="btn-theme__note">
+                                        Chủ đề
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="setting-item setting-layout button">
+                                <button class="zm-btn setting-item__button btn-setting">
+                                    <i class="setting-item__icon ti-settings"></i>
+                                    <div class="btn-setting__note">
+                                        Cài đặt
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="setting-user button">
+                                <button class="zm-btn setting-user__button">
+                                    <i class="user-icon fas fa-user"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="zm-section">
+                    <div class="container">
+                        <!-- Phan playlist -->
+                       <div class="playlist">
+                           <div class="media-header">
+                               <div class="media-left">
+                                   <div class="img-card">
+                                        <div class="img-card__item">
+                                            <img src="./assets/img/album-100-img.jpg" alt="">
+                                        </div>
+                                        <div class="img-card__icon btn-play img-card__icon--play">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                        <div class="img-card__icon btn-pause img-card__icon--pause">
+                                            <i class="far fa-pause-circle"></i>
+                                        </div>
+                                   </div>
+                               </div>
+                               <div class="media-content">
+                                   <div class="content-top">
+                                       <h3 class="title">Top 100 Nhạc Rap Việt Nam Hay Nhất</h3>
+                                       <div class="release">Cập Nhật: 17/08/2021</div>
+                                       <div class="like">330K người yêu thích</div>
+                                   </div>
+                                   <div class="action">
+                                       <div class="action-left">
+                                        <button class="zm-btn btn-play">
+                                            <i class="fas fa-play"></i>
+                                            Tiếp tục phát
+                                       </button>
+                                       </div>
+                                       <div class="action-right">
+
+                                           <button class="zm-btn btn-like">
+                                                <i class="btn-like__icon far fa-heart"></i>
+                                                <div class="btn-like__desc">Thêm vào thư viện</div>
+                                           </button>
+                                           <button class="zm-btn btn-option">
+                                            <i class="btn-option__icon ti-more-alt"></i>
+                                            <div class="btn-option__desc">Khác</div>
+                                           </button>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="playlist-content">
+                                <div class="playlist-desc">
+                                    <span>Lời tựa</span>
+                                    Top 100 Nhạc Rap Việt Nam Hay Nhất là danh sách 100 ca khúc hot nhất hiện tại của thể loại nhạc Rap Việt Nam, 
+                                    được Zing MP3 tự động tổng hợp dựa trên thông tin số liệu lượt nghe và lượt chia sẻ 
+                                    của từng bài hát trên phiên bản web và phiên bản Mobile. Dữ liệu sẽ được lấy 
+                                    trong 30 ngày gần nhất và được cập nhật liên tục.
+                                </div>
+                                <div class="playlist-songs">
+                                    <div class="songs-header">
+                                        <div class="song-title">
+                                            <div class="songs-header__text">Bài hát</div>
+                                        </div>
+                                        <div class="song-time">
+                                            <div class="songs-header__text">Thời lượng</div>
+                                        </div>
+                                        <div class="song-arrang">
+                                            <div class="dropdown-trigger">
+                                                <div class="dropdown-btn">
+                                                    <div class="songs-header__text dropdown-btn__name">mặc định</div>
+                                                    
+                                                    <i class="dropdown__icon arrow-down ti-angle-down"></i>
+                                                    <i class="dropdown__icon arrow-up ti-angle-up"></i>
+                                                    
+                                                </div>
+                                                <div class="dropdown-content">
+                                                    <div class="dropdown-content__choose">
+                                                        <h3>Mặc định</h3>
+                                                        <h3>Tên bài hát (A-Z)</h3>
+                                                        <h3>Tên ca sĩ (A-Z)</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="songs-list">
+                                        
+                                    </div>
+                                </div>
+                                <div class="playlist-content__bottom"></div>
+                           </div>
+                       </div>
+
+                       <!-- Phan artis phia duoi playlist -->
+                       <div class="artis-section">
+                           <div class="artis-header">
+                               Nghệ Sĩ Tham Gia
+                               <div class="artis-header__item">
+                                    <i class="ti-angle-left"></i>
+                                    <i class="ti-angle-right"></i>
+                               </div>
+                           </div>
+                           <div class="artis-wrapper">
+                                <div class="artis-infor karik-item">
+                                    <div class="artis-infor__item">
+                                        <div class="artis-infor__img" style="background-image: url(./assets/img/karik-450x319.jpg);">
+                                        </div>
+                                        
+
+                                            <i class="artis-infor__icon fas fa-play"></i>
+                                        
+                                    </div>
+                                    <div class="artis-infor__desc">
+                                        <div class="artis-infor__name">
+                                            Karik
+                                        </div>
+                                        <span>204K quan tâm</span>
+                                    </div>
+                                    <div class="artis-follow">
+                                        <div class="artis-follow__btn">
+                                            <i class="fas fa-user-plus"></i>
+                                            Follow
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="artis-infor">
+                                    <div class="artis-infor__item">
+                                        <div class="artis-infor__img" style="background-image: url(./assets/img/pmquynh.jpg);">
+                                        </div>
+                                        
+
+                                            <i class="artis-infor__icon fas fa-play"></i>
+                                        
+                                    </div>
+                                    <div class="artis-infor__desc">
+                                        <div class="artis-infor__name">
+                                            Phan Mạnh Quỳnh
+                                        </div>
+                                        <span>214K quan tâm</span>
+                                    </div>
+                                    <div class="artis-follow">
+                                        <div class="artis-follow__btn">
+                                            <i class="fas fa-user-plus"></i>
+                                            Follow
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="artis-infor">
+                                    <div class="artis-infor__item">
+                                        <div class="artis-infor__img" style="background-image: url(./assets/img/denvau.jpg);">
+                                        </div>
+                                        
+
+                                            <i class="artis-infor__icon fas fa-play"></i>
+                                        
+                                    </div>
+                                    <div class="artis-infor__desc">
+                                        <div class="artis-infor__name">
+                                            Đen Vâu
+                                        </div>
+                                        <span>187K quan tâm</span>
+                                    </div>
+                                    <div class="artis-follow">
+                                        <div class="artis-follow__btn">
+                                            <i class="fas fa-user-plus"></i>
+                                            Follow
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="artis-infor">
+                                    <div class="artis-infor__item">
+                                        <div class="artis-infor__img" style="background-image: url(./assets/img/binz.jpg);">
+                                        </div>
+                                        
+
+                                            <i class="artis-infor__icon fas fa-play"></i>
+                                        
+                                    </div>
+                                    <div class="artis-infor__desc">
+                                        <div class="artis-infor__name">
+                                            Binz
+                                        </div>
+                                        <span>300K quan tâm</span>
+                                    </div>
+                                    <div class="artis-follow">
+                                        <div class="artis-follow__btn">
+                                            <i class="fas fa-user-plus"></i>
+                                            Follow
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="artis-infor">
+                                    <div class="artis-infor__item">
+                                        <div class="artis-infor__img" style="background-image: url(./assets/img/khacviet.jpg);">
+                                        </div>
+                                        
+
+                                            <i class="artis-infor__icon fas fa-play"></i>
+                                        
+                                    </div>
+                                    <div class="artis-infor__desc">
+                                        <div class="artis-infor__name">
+                                            Khắc Việt
+                                        </div>
+                                        <span>170K quan tâm</span>
+                                    </div>
+                                    <div class="artis-follow">
+                                        <div class="artis-follow__btn">
+                                            <i class="fas fa-user-plus"></i>
+                                            Follow
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="player-control">
+            <div class="player-control__container">
+                <div class="container-left">
+                    <div class="cd">
+                        <div class="cd-thumb"
+                            style="background-image: url(./assets/img/album1-avata.jpg);">
+                        
+                        </div>
+
+                    </div>
+                    <div class="container-left__item">
+                        <div class="song-name player-song-name">Cùng Anh</div>
+                        <div class="singer-name player-singer-name">Ngọc Dolil</div>
+                    </div>
+
+                    <div class="container-left__button">
+                        <div class="player-control__btn player-like">
+                            <i class="far fa-heart"></i>
+                            <div class="player-like__desc">Thêm vào thư viện</div>
+                        </div>
+                        <div class="player-control__btn btn-more">
+                            <i class="ti-more-alt"></i>
+                            <div class="btn-more__desc">Xem Thêm</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-content">
+                    <div class="container-content__action">
+                        <div class="btn-action btn-random">
+                            <i class="ti-control-shuffle"></i>
+                        </div>
+                        <div class="btn-action btn-back">
+                            <i class="ti-control-skip-backward"></i>
+                        </div>
+                        <div class="btn-play btn-toogle-play">
+                            <i class="far fa-play-circle icon-play"></i>
+                            <i class="far fa-pause-circle icon-pause"></i>
+                            
+                        </div>
+                        <div class="btn-action btn-next">
+                            <i class="ti-control-skip-forward"></i>
+                        </div>
+                        <div class="btn-action btn-repeat">
+                            <i class="ti-loop"></i>
+                        </div>
+                    </div>
+                    <div class="container-content__time">
+                        <div class="timer current-time"></div>
+                        <input
+                                id="progress"
+                                class="progress"
+                                type="range"
+                                value="0"
+                                step="1"
+                                min="0"
+                                max="100"
+                        />
+                        <div class="timer duration-time">03:20</div>
+                    </div>
+
+                    <audio id="audio" src=""></audio>
+                </div>
+                <div class="container-right">
+                    <div class="player-control__btn btn-mv">
+                        <i class="ti-video-clapper"></i>
+                        <div class="btn-mv__desc">MV</div>
+                    </div>
+                    <div class="player-control__btn btn-karaok">
+                        <i class="ti-microphone-alt"></i>
+                        <div class="btn-karaok__desc">Xem lời bài hát</div>
+                    </div>
+                    <div class="player-control__btn btn-vol">
+                        <i class="ti-volume"></i>
+                        <div class="btn-vol__desc"></div>
+                    </div>
+                    <input 
+                    id="volume"
+                    class="volume"
+                    type="range"
+                    value="0.7"
+                    step="0.1"
+                    min="0"
+                    max="1">
+                    <div class="player-control__wrapper">
+                        <div class="player-control__btn music-list">
+                            <i class="ti-music"></i>
+                            <div class="music-list__desc">Danh sách phát</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="./assets/music/music_img/bigcityboy.jpg"></a>
+</body>
+<script src="./app.js"></script>
+
+</html>
